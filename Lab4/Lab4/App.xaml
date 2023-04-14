@@ -1,0 +1,18 @@
+﻿using System;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+    
+[assembly: XamlCompilation (XamlCompilationOptions.Compile)]
+namespace Ejercicio02
+{
+    6 referencias
+    public partial class Appm : Application
+    {
+        2 referencias
+        public App ()
+        {
+             InitializeComponent();
+    
+              MainPage = new NavigationPage(new MainPage());
+     
+         }

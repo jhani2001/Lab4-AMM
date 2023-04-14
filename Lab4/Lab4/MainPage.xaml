@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generric;
+using System.Diagnostics;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+    
+namespace Ejercicio02
+{
+    5 referencias
+    public partialclass MainPage : ContentPage
+    {
+         1 referencia
+         public MainPage()
+         {
+             InitializeComponent();
+    
+             Item1.Clicked += async (sender, e) =>
+             {
+                 await Navigation.PushAsync(new Page1());
+             };
+    
+              Item2.Clicked += async (sender, e) =>
+              {
+                  await Navigation.PushAsync(new TabbedPage1());
+              };
+    
+              Item3.Clicked += async (sender, e) =>
+              {
+                  await Navigation.PushAsync(new CarouselPage1());
+              };
+    
+               Item4.Clicked += async (sender, e) =>
+              {
+                  await Navigation.PushAsync(new ModalPage1());
+               };
+    
+               Item6.Clicked += async (sender, e) =>
+               {
+    
+                   var answer = await DisplayAlert("Question?");
+                       "would you like to play a game", "Yes", "No");
+                   Debug.WriteLine("Answer: " " + answer);
+    
+                };
+               
+    
